@@ -1,30 +1,66 @@
-# 🧠 AI-Powered Sentiment & Mental Health Analysis Dashboard
+📊 Multi-Platform AI Sentiment Intelligence Dashboard
+This project is a sophisticated Sentiment Analysis and Data Visualization Dashboard designed to extract actionable insights from customer reviews across major e-commerce platforms like Alibaba, Amazon, Daraz, and Walmart.
 
-An interactive web application that provides real-time sentiment analysis and deep insights into customer reviews from various e-commerce platforms. This tool is specifically designed to handle both **English** and **Romanized Sinhala (Singlish)** text.
+It utilizes a Multilingual AI model and a custom heuristic engine to accurately interpret feedback in both English and Romanized Sinhala (Singlish).
 
-## 🚀 Live Demo
-Check out the live dashboard here: [Live Link](https://real-time-mental-health-sentiment-analysis.streamlit.app/)
+🌟 Key Features
+Multilingual Analysis: Powered by the DistilBERT multilingual model to handle diverse customer languages.
 
-## ✨ Key Features
-- **Real-time Sentiment Engine:** Instantly detect Positive, Negative, or Neutral sentiments from user input.
-- **Multilingual Support:** High accuracy for English and Romanized Sinhala using custom keyword refinement.
-- **Data Visualization:** Interactive Pie Charts and data tables for platforms like:
-  - Daraz, Walmart, Amazon, Shein, Alibaba, and AliExpress.
-- **Sentiment Distribution:** Visualizes the breakdown of sentiments across large datasets using Plotly.
+Custom Heuristic Engine: Includes a specialized logic layer to correctly identify local Sri Lankan slang (e.g., niyamai, pattayi, maru) that standard AI models might miss.
 
-## 🛠️ Tech Stack
-- **Framework:** Streamlit (Frontend & Hosting)
-- **Programming Language:** Python 3.x
-- **AI/NLP Model:** HuggingFace Transformers (DistilBERT Multilingual)
-- **Data Handling:** Pandas, NumPy
-- **Visualization:** Plotly Express
+Real-time Analysis Module: A dedicated interface for instant "on-the-fly" sentiment testing.
 
-## 📂 Project Structure
-- `Dashboard.py`: The main application script.
-- `requirements.txt`: List of Python dependencies for deployment.
-- `Analyzed_*.csv`: Processed datasets containing sentiment scores for various platforms.
+Dynamic Data Filtering: Users can filter datasets by sentiment (Positive, Negative, Neutral) to isolate specific business issues.
 
-## 🔧 Installation & Local Setup
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/tharukshidananjana/-Real-time-Mental-Health-Sentiment-Analysis.git](https://github.com/tharukshidananjana/-Real-time-Mental-Health-Sentiment-Analysis.git)
+Visual Business Intelligence: * Pie Charts: For high-level sentiment distribution.
+
+Word Clouds: For instant identification of trending keywords and customer pain points.
+
+Report Exporting: Built-in functionality to export filtered analysis results as CSV files for corporate reporting.
+
+🛠️ Tech Stack
+Language: Python 3.x
+
+Web Framework: Streamlit
+
+Machine Learning: Hugging Face Transformers (PyTorch backend)
+
+Data Processing: Pandas, NumPy
+
+Visualization: Plotly Express, WordCloud, Matplotlib
+
+🚀 Installation & Setup
+1. Prerequisites
+Ensure you have Python installed. Then, install the required libraries:
+
+Bash
+
+pip install streamlit pandas plotly transformers wordcloud matplotlib torch
+2. Project Structure
+Your folder should contain:
+
+Dashboard.py (The main application)
+
+requirements.txt (Dependency list)
+
+Analysis scripts (e.g., converted_data.py, Romanized Sinhala.py)
+
+Generated CSV files (e.g., Analyzed_Alibaba_Final.csv)
+
+3. Running the Application
+First, generate the analyzed data by running your specific platform scripts. Then, launch the dashboard:
+
+Bash
+
+streamlit run Dashboard.py
+📈 Use Case: Business Impact
+This tool allows a business manager to:
+
+Identify Trends: See that "Delivery" is the most frequent word in Negative reviews for Daraz.
+
+Verify Slang: Ensure that positive Singlish feedback like "eka maru" is correctly counted as a Positive sentiment.
+
+Data Portability: Export the filtered "Negative" reviews to send to the Logistics team for improvement.
+
+👤 Author
+[H.K.Tharukshi Dhananjana] Aspiring Data Scientist
