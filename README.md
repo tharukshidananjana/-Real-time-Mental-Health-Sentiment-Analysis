@@ -3,6 +3,8 @@ This project is a sophisticated Sentiment Analysis and Data Visualization Dashbo
 
 It utilizes a Multilingual AI model and a custom heuristic engine to accurately interpret feedback in both English and Romanized Sinhala (Singlish).
 
+🚀Live Link : https://e-commerce-sentiment-dashboard.streamlit.app/
+
 🌟 Key Features
 Multilingual Analysis: Powered by the DistilBERT multilingual model to handle diverse customer languages.
 
